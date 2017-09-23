@@ -122,3 +122,6 @@ STATIC_URL = '/static/'
 
 # path for static files like CSS files 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# redirect a logged in user to top-level directory 
+LOGIN_REDIRECT_URL = '/'
