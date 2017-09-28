@@ -4,7 +4,7 @@ from . import views
 ## dot (.) means from self import view 
 
 urlpatterns = [
-
+   #url(regex, view to reference, name of view) 
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
@@ -16,3 +16,4 @@ urlpatterns = [
     url(r'^comment/(?P<pk>\d+)/approve/$', views.comment_approve, name='comment_approve'),
     url(r'^comment/(?P<pk>\d+)/remove/$', views.comment_remove, name='comment_remove'), 
 ]
+
